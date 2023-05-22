@@ -4,7 +4,7 @@ describe 'CashRegister' do
 
   describe '.new' do
     it 'takes one optional argument, an employee discount, on initialization' do
-      expect(cash_register_with_discount.discount).to eq(20)
+      expect(cash_register_with_discount.employee_discount).to eq(20)
     end
 
     it 'sets an instance variable @total on initialization to zero' do
@@ -99,4 +99,3 @@ describe 'CashRegister' do
     end
   end
 end
-
